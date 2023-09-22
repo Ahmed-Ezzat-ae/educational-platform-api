@@ -51,7 +51,7 @@ const uploadFiles = async (req, res) => {
       return res.status(400).json({ message: ' هذاالملف غير صالح' });
     }
   } catch (error) {
-    res.status(500).json({ message: error });
+    res.status(500).json({ message: error.message });
   }
 };
 
