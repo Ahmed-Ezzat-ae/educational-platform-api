@@ -48,7 +48,7 @@ const uploadFiles = async (req, res) => {
       await group.save();
       res.status(200).json({ message: 'تم رفع الملف بنجاح' });
     } else {
-      return res.status(400).json({ message: ' هذاالملف غير صالح' });
+      return res.status(400).json({ message: ' هذا الملف غير صالح' });
     }
   } catch (error) {
     res.status(500).json({ message: error.message });
